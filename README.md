@@ -1,5 +1,5 @@
 # Bionic reader
-A Chrome extension for translating pages to bionic reading, which can be very beneficial to neurodiverse readers.
+A Chrome extension for translating pages to bionic reading, which can be very beneficial to neurodiverse readers. [Read more about Bionic Reading here.](https://bionic-reading.com/)
 
 ## Features
 
