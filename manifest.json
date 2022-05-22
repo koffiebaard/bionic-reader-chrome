@@ -5,9 +5,21 @@
   "manifest_version": 3,
   "permissions": ["storage", "activeTab", "scripting"],
   "action": {
-    "default_popup": "src/settings.html"
+    "default_popup": "src/settings.html",
+    "default_icon": {
+      "16": "/icon/icon_16.png",
+      "32": "/icon/icon_32.png",
+      "48": "/icon/icon_48.png",
+      "128": "/icon/icon_128.png"
+    }
   },
   "background": {
     "service_worker": "src/worker.js"
+  },
+  "icons": {
+    "16": "/icon/icon_16.png",
+    "32": "/icon/icon_32.png",
+    "48": "/icon/icon_48.png",
+    "128": "/icon/icon_128.png"
   }
 }
