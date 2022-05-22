@@ -9,7 +9,7 @@ A Chrome extension for translating pages to bionic reading, which can be very be
 
 ## Example screenshot
 
-![Example screenshot](docs/example.png)
+![Example screenshot](docs/example-screenshot.png)
 
 ## Font
 It overrides the font of the webpage as many (many) fonts don't work with Bionic Reading. This is mainly because of the size of bold and thin letters, and it seems having mono-spaced sans fonts improves neurodiverse reading capabilities anyway.
