@@ -1,0 +1,39 @@
+body {
+  min-height: 100px;
+  min-width: 100px;
+  text-align: center;
+  padding: 7px;
+  background-color: #222;
+  color: #ddd;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  margin-top: 10px;
+}
+
+#font_size_label {
+  float: left;
+}
+
+#font_size_output {
+  float: right;
+}
+
+button#convert {
+  background-color: #00bd48;
+  color: #fff;
+  border: 1px solid #007a2f;
+  border-radius: 5px;
+  padding: 5px;
+}
