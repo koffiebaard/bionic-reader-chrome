@@ -4,7 +4,13 @@ document.getElementById("convert").addEventListener("click", async () => {
 
   chrome.scripting.executeScript({
     target: { tabId: tab.id },
-    function: convertPageToBionic,
+    files: ['src/content-script.js']
+  }, () => {
+
+    chrome.scripting.executeScript({
+      target: { tabId: tab.id },
+      function: convertPageToBionic,
+    });
   });
 });
 

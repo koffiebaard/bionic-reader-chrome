@@ -1,7 +1,7 @@
 {
   "name": "Bionic Reader",
   "description": "Enable bionic reading for any webpage, improving readability for neurodiversity such as ADHD and autism.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 3,
   "permissions": ["storage", "activeTab", "scripting"],
   "action": {
@@ -21,15 +21,5 @@
     "32": "/icon/icon_32.png",
     "48": "/icon/icon_48.png",
     "128": "/icon/icon_128.png"
-  },
-  "content_scripts": [
-    {
-      "js": [
-        "src/content-script.js"
-      ],
-      "matches": [
-        "<all_urls>"
-      ]
-    }
-  ]
+  }
 }
