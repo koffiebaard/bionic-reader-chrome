@@ -32,28 +32,9 @@ function convertPageToBionic() {
     document.head.appendChild(style);
   });
 
-  function translateWordToBionic(word) {
-    const midPoint = Math.floor(word.length / 2);
-    const firstHalf = word.slice(0, midPoint);
-    const secondHalf = word.slice(midPoint);
-    return `<b>${firstHalf}</b>${secondHalf}`;
-  }
-
   let paragraphs = document.querySelectorAll('p,h1,h2,h3,h4,h5,h6,ul li');
 
   for (let paragraph of paragraphs) {
-    const words = paragraph.textContent.split(" ");
-
-    paragraph.innerHTML = words.map((word) => {
-      if (word.indexOf("-") >= 0) {
-        const translatedDashWords = word.split("-").map((word) => {
-          return translateWordToBionic(word);
-        });
-
-        return translatedDashWords.join("-");
-      }
-
-      return translateWordToBionic(word);
-    }).join(" ");
+    paragraph.innerHTML = translateParagraphToBionic(paragraph);
   }
 }
