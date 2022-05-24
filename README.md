@@ -33,3 +33,8 @@ Run tests:
 ```bash
 npm test
 ```
+
+Build new artifact:
+```bash
+npm run build
+```

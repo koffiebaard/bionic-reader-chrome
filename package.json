@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "jest tests",
-    "build": "zip -r artifacts/$npm_package_version.zip . -x '*.git*' -x '*.DS_Store' -x 'node_modules*' -x 'tests*' -x 'artifacts*' -x 'package*json' -x 'docs*'"
+    "build": "if [ -f \"artifacts/$npm_package_version.zip\" ]; then echo 'Artifact already exists under this version.'; else zip -r artifacts/$npm_package_version.zip . -x '*.git*' -x '*.DS_Store' -x 'node_modules*' -x 'tests*' -x 'artifacts*' -x 'package*json' -x 'docs*'; fi"
   },
   "repository": {
     "type": "git",
