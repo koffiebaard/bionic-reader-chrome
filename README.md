@@ -24,3 +24,12 @@ As it's not in the webstore yet, you can add it with these steps:
 - Enable `Developer mode` on the right top side
 - Press the `Load unpackaged` button on the left top side
 - Select the directory with the repository
+
+
+## Development
+Automated tests are set up using `Jest`, so to collaborate you'll need to install `node`.
+
+Run tests:
+```bash
+npm test
+```

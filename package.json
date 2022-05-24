@@ -1,0 +1,29 @@
+{
+  "name": "bionic-reader",
+  "version": "1.0.0",
+  "description": "A Chrome extension for translating pages to bionic reading, which can be very beneficial to neurodiverse readers.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
+  },
+  "scripts": {
+    "test": "jest tests",
+    "build": "zip -r artifacts/$npm_package_version.zip . -x '*.git*' -x '*.DS_Store' -x 'node_modules*' -x 'tests*' -x 'artifacts*' -x 'package*json' -x 'docs*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koffiebaard/bionic-reader-chrome.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koffiebaard/bionic-reader-chrome/issues"
+  },
+  "homepage": "https://github.com/koffiebaard/bionic-reader-chrome#readme"
+}
