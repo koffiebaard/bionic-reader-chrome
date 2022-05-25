@@ -4,8 +4,10 @@ A Chrome extension for translating pages to bionic reading, which can be very be
 ## Features
 
 - Bionic reading on any webpage with a click on a button;
+- Keeps links and highlighting intact;
 - Configurable font size;
-- Fixed font for easy reading.
+- Fixed font for easy reading;
+- Automated tests.
 
 ## Example screenshot
 
