@@ -45,13 +45,19 @@ form {
   cursor: pointer; /* Cursor on hover */
 }
 
-#font_size_label {
+.form-group {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+#font_size_label, #font_label {
   float: left;
 }
 
-#font_size_output {
+#font_size_output, #font {
   float: right;
 }
+
 
 button#convert {
   background-color: #00bd48;
@@ -60,4 +66,9 @@ button#convert {
   border-radius: 5px;
   padding: 5px;
   margin-top: 15px;
+}
+
+select, select option {
+  background-color: #00bd48;
+  color: #fff;
 }

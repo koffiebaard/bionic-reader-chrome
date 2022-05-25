@@ -5,8 +5,7 @@ A Chrome extension for translating pages to bionic reading, which can be very be
 
 - Bionic reading on any webpage with a click on a button;
 - Keeps links and highlighting intact;
-- Configurable font size;
-- Fixed font for easy reading;
+- Configurable font & font size;
 - Automated tests.
 
 ## Example screenshot
@@ -16,7 +15,10 @@ A Chrome extension for translating pages to bionic reading, which can be very be
 ## Font
 It overrides the font of the webpage as many (many) fonts don't work with Bionic Reading. This is mainly because of the size of bold and thin letters, and it seems having mono-spaced sans fonts improves neurodiverse reading capabilities anyway.
 
-It currently uses Google's Open Sans, which I want to make configurable once I have the time.
+The font is configurable, you can choose one of these fonts:
+- Open Sans
+- Noto Sans
+- Source Sans Pro
 
 ## How to install
 As it's not in the webstore yet, you can add it with these steps:
