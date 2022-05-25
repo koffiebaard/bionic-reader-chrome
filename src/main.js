@@ -43,7 +43,7 @@ function convertPageToBionic() {
   // Style the page
   chrome.storage.sync.get("font_size", ({ font_size }) => {
     var style = document.createElement("style");
-    style.textContent = `p,h1,h2,h3,h4,h5,h6,ul li,a { font-family: 'Open Sans' !important; font-weight: 100 !important; } p,h1,h2,h3,h4,h5,h6,ul li {color: #333 !important;} p { font-size: ${font_size}px; } b { font-weight: 650 !important } `;
+    style.textContent = `p,h1,h2,h3,h4,h5,h6,ul li,a { font-family: 'Open Sans' !important; font-weight: 100 !important; } p { font-size: ${font_size}px; } b { font-weight: 650 !important } `;
     document.head.appendChild(style);
   });
 
