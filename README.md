@@ -1,5 +1,9 @@
 # Bionic reader
-A Chrome extension for translating pages to bionic reading, which can be very beneficial to neurodiverse readers. [Read more about Bionic Reading here.](https://bionic-reading.com/)
+A Chrome extension for translating pages to bionic reading, which can be very beneficial to neurodiverse readers.
+
+[Check it out in the Chrome Web Store.](https://chrome.google.com/webstore/detail/bionic-reader/afofodfmpeikmcpjoobibhipehodefjc?hl=en&authuser=0)
+
+[Read more about Bionic Reading here.](https://bionic-reading.com/)
 
 ## Features
 
@@ -21,7 +25,9 @@ The font is configurable, you can choose one of these fonts:
 - Source Sans Pro
 
 ## How to install
-As it's not in the webstore yet, you can add it with these steps:
+[Check it out in the Chrome Web Store!](https://chrome.google.com/webstore/detail/bionic-reader/afofodfmpeikmcpjoobibhipehodefjc?hl=en&authuser=0)
+
+Or, you can add it with these steps:
 
 - Download the repo (git clone, or as a zip and unpack)
 - Go to `Settings`, and then `Extensions`
