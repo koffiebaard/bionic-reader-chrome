@@ -57,6 +57,7 @@ function convertPageToBionic() {
     var link = document.createElement('link');
     link.type = 'text/css';
     link.rel = 'stylesheet';
+    link.id = 'bionic-reader-font';
     link.href = `//fonts.googleapis.com/css?family=${font.replace(' ', '+')}:100,200,500,600,650,700,800,900`;
     document.head.appendChild(link);
 

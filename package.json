@@ -8,13 +8,17 @@
     "test": "tests"
   },
   "dependencies": {
+    "puppeteer": "^14.1.1"
   },
   "devDependencies": {
-    "jest": "^28.1.0"
+    "jest": "^28.1.0",
+    "jest-puppeteer": "^6.1.0"
   },
   "scripts": {
-    "test": "jest tests",
-    "build": "if [ -f \"artifacts/$npm_package_version.zip\" ]; then echo 'Artifact already exists under this version.'; else zip -r artifacts/$npm_package_version.zip . -x '*.git*' -x '*.DS_Store' -x 'node_modules*' -x 'tests*' -x 'artifacts*' -x 'package*json' -x 'docs*'; fi"
+    "test": "jest tests --config '{\"preset\": \"jest-puppeteer\"}'",
+    "test:unit": "jest tests/unit",
+    "test:int": "jest tests/integration --config '{\"preset\": \"jest-puppeteer\"}'",
+    "build": "if [ -f \"artifacts/$npm_package_version.zip\" ]; then echo 'Artifact already exists under this version.'; else zip -r artifacts/$npm_package_version.zip . -x '*.git*' -x '*.DS_Store' -x 'node_modules*' -x 'tests*' -x 'artifacts*' -x 'package*json' -x 'docs*' -x 'jest-puppeteer.config.js'; fi"
   },
   "repository": {
     "type": "git",

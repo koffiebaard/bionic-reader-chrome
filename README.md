@@ -48,3 +48,20 @@ Build new artifact:
 ```bash
 npm run build
 ```
+
+## Automated tests
+Unit tests cover the logic of Bionic Reading translations.
+
+Integration tests cover how the popup is functioning. Storing and retrieving values from the Chrome storage for example. This is set up using `puppeteer`, launching a headful instance of Chrome, installing our own extension and visiting the popup html to do tests on.
+
+To do this, we need to know beforehand which application ID the extension has. For this we have a key in the manifest, [as explained in the docs here.](https://developer.chrome.com/docs/extensions/mv2/manifest/key/). For development this results in a specific application ID.
+
+Run unit tests:
+```bash
+npm run test:unit
+```
+
+Run integration tests:
+```bash
+npm run test:int
+```

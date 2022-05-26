@@ -1,4 +1,4 @@
-const tools = require('../src/content-script.js');
+const tools = require('../../src/content-script.js');
 
 test('Test paragraph: "This is a test."', () => {
   expect(tools.translateParagraphToBionic("This is a test.")).toBe("<b>Th</b>is <b>i</b>s a <b>te</b>st.");

@@ -1,4 +1,4 @@
-const tools = require('../src/content-script.js');
+const tools = require('../../src/content-script.js');
 
 test('Word length 1', () => {
   expect(tools.translateWordToBionic("a")).toBe("a");
